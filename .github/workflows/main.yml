@@ -34,5 +34,5 @@ jobs:
             yarn build
             pm2 stop Reservation_BE || true
             pm2 delete Reservation_BE || true
-            pm2 start "yarn start" --name "Reservation_BE"
+            pm2 start "yarn dev" --name "Reservation_BE"
           EOF
